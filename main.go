@@ -41,6 +41,7 @@ func Dials(ips []string)  {
 	fmt.Println(unUse)
 }
 
+// Dial
 func isOpen(host string, port int, timeOut time.Duration) bool {
 	time.Sleep(time.Millisecond * 1)
 	conn, err := net.DialTimeout("tcp", fmt.Sprintf("%s:%d", host, port), timeOut)
